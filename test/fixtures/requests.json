@@ -1,0 +1,5 @@
+[
+  { "item": "report-an-issue", "kind": "TICKET", "title": "Restore lesson downloads", "product": "canyon-lessons" },
+  { "item": "new-customer-case", "kind": "CASE", "title": "Explain archive access", "product": "creek-archive" },
+  { "item": "propose-an-initiative", "kind": "INITIATIVE", "title": "Plan a field guide series", "product": "mesa-publishing" }
+]

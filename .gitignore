@@ -1,0 +1,12 @@
+data/
+logs/
+*.db
+*.db-*
+*.sqlite*
+/config.mjs
+.env*
+.test-tmp/
+node_modules/
+index.html
+coverage/
+*.log

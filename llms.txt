@@ -1,0 +1,20 @@
+Avalanche Service Catalog by PickBits, version 0.1.0.
+Purpose: local request forms for people and AI agents; command producers return destination references.
+Runtime: Node 22.13+, ESM, node:sqlite, node:http; zero runtime dependencies; Apache-2.0.
+Package: avalanche-service-catalog. Bin: avalanche-catalog.
+Commands: init, list, show, submit, requests, request, desk, demo.
+Private data: --data-dir > AVALANCHE_CATALOG_DATA_DIR > platform default.
+Config: private <dataDir>/config.mjs; AVALANCHE_CATALOG_CONFIG override; public config.example.mjs fallback.
+Identity: --actor > AVALANCHE_CATALOG_USER > actors.default > human:OS-username.
+Desk: 127.0.0.1:4179; desk.port and AVALANCHE_CATALOG_DESK_PORT; no scanning, no authentication.
+POSTs: exact Host and Origin, fresh page token, 1 MiB body cap. Local static scripts and styles.
+Optional source: sources.estate.path supplies engine selector ids only; no required sibling repos.
+Producers: destination selects producers map; argv, cwd, timeoutMs, refPattern; shell:false.
+Core: lib/catalog.mjs validates and submits; lib/store.mjs preserves requests/events/sequences.
+Panel API: lib/panel.mjs exports id, title, nav, collect, stat, render; missing store returns null.
+Demo: npm run demo; Juniper Trail Studio, eight forms, five actors, 41 requests, two months.
+Checks: npm test; npm run leakscan; node test/consumer-install.mjs; npm run preflight.
+Tests/consumer use .test-tmp and never bind ports; consumer installs offline with normal npm cache.
+Limits: no destination status sync, approvals, automated retries, distributed transaction, hosting or authentication.
+All instance data is private and outside code; all demo data is synthetic.
+Read README.md, DEMO.md, SECURITY.md, LICENSE and NOTICE.

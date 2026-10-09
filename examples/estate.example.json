@@ -1,0 +1,237 @@
+{
+  "company": "Juniper Trail Studio",
+  "engines": [
+    {
+      "id": "trail-notes",
+      "owner": "Priya Natarajan",
+      "dir": "services/trail-notes",
+      "name": "Trail Notes",
+      "note": "Juniper Trail Studio product workspace",
+      "url": "http://127.0.0.1:4300",
+      "servers": [
+        {
+          "port": 4300,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4320,
+          "url": "http://127.0.0.1:4320"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "trail-notes-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:scout",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "mesa-publishing",
+      "owner": "Owen Castellanos",
+      "dir": "services/mesa-publishing",
+      "name": "Mesa Publishing",
+      "note": "Juniper Trail Studio content service",
+      "url": "http://127.0.0.1:4301",
+      "servers": [
+        {
+          "port": 4301,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4321,
+          "url": "http://127.0.0.1:4321"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "mesa-publishing-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:builder",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "canyon-lessons",
+      "owner": "Priya Natarajan",
+      "dir": "services/canyon-lessons",
+      "name": "Canyon Lessons",
+      "note": "Juniper Trail Studio product workspace",
+      "url": "http://127.0.0.1:4302",
+      "servers": [
+        {
+          "port": 4302,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4322,
+          "url": "http://127.0.0.1:4322"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "canyon-lessons-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:scribe",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "pine-studio",
+      "owner": "Owen Castellanos",
+      "dir": "services/pine-studio",
+      "name": "Pine Studio",
+      "note": "Juniper Trail Studio content service",
+      "url": "http://127.0.0.1:4303",
+      "servers": [
+        {
+          "port": 4303,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4323,
+          "url": "http://127.0.0.1:4323"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "pine-studio-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:scout",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "ridge-status",
+      "owner": "Priya Natarajan",
+      "dir": "services/ridge-status",
+      "name": "Ridge Status",
+      "note": "Juniper Trail Studio product workspace",
+      "url": "http://127.0.0.1:4304",
+      "servers": [
+        {
+          "port": 4304,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4324,
+          "url": "http://127.0.0.1:4324"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "ridge-status-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:builder",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "creek-archive",
+      "owner": "Owen Castellanos",
+      "dir": "services/creek-archive",
+      "name": "Creek Archive",
+      "note": "Juniper Trail Studio content service",
+      "url": "http://127.0.0.1:4305",
+      "servers": [
+        {
+          "port": 4305,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4325,
+          "url": "http://127.0.0.1:4325"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "creek-archive-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:scribe",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "aspen-billing",
+      "owner": "Priya Natarajan",
+      "dir": "services/aspen-billing",
+      "name": "Aspen Billing",
+      "note": "Juniper Trail Studio product workspace",
+      "url": "http://127.0.0.1:4306",
+      "servers": [
+        {
+          "port": 4306,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4326,
+          "url": "http://127.0.0.1:4326"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "aspen-billing-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:scout",
+          "command": "node review.mjs"
+        }
+      ]
+    },
+    {
+      "id": "juniper-lab",
+      "owner": "Owen Castellanos",
+      "dir": "services/juniper-lab",
+      "name": "Juniper Lab",
+      "note": "Juniper Trail Studio content service",
+      "url": "http://127.0.0.1:4307",
+      "servers": [
+        {
+          "port": 4307,
+          "what": "local desk",
+          "start": "node server.mjs"
+        }
+      ],
+      "satellites": [
+        {
+          "port": 4327,
+          "url": "http://127.0.0.1:4327"
+        }
+      ],
+      "jobs": [
+        {
+          "id": "juniper-lab-review",
+          "schedule": "Monday 09:00 America/Phoenix",
+          "actor": "agent:builder",
+          "command": "node review.mjs"
+        }
+      ]
+    }
+  ]
+}

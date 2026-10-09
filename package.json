@@ -1,0 +1,22 @@
+{
+  "name": "avalanche-service-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local service catalog, validated request forms and command producers",
+  "license": "Apache-2.0",
+  "author": "Mark Pickering and PICKBITS LLC",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "avalanche-catalog": "bin/catalog.mjs"
+  },
+  "scripts": {
+    "test": "node --import ./test/no-network.mjs --test test/*.test.mjs",
+    "desk": "node bin/desk.mjs",
+    "demo": "node bin/catalog.mjs demo",
+    "leakscan": "node test/leakscan.mjs",
+    "preflight": "npm test && npm run leakscan && node test/consumer-install.mjs"
+  }
+}
